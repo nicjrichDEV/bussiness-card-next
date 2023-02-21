@@ -12,7 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="flex h-48 w-96 flex-col divide-y divide-slate-200 overflow-hidden rounded-lg bg-white shadow">
+        <div className="relative flex h-48 w-96 flex-col divide-y divide-slate-200 overflow-hidden rounded-lg bg-white shadow">
+          <Globe className="bg-custom-pos absolute top-0 right-0 h-40 w-40 text-slate-500 opacity-5" />
           <div className="flex grow p-2">
             <Image
               src={'/images/nick.png'}
@@ -21,33 +22,47 @@ export default function Home() {
               height={120}
               className="h-32 w-32 rounded-md"
             />
-            <div className="h=32 flex flex-col content-start justify-center pl-3 text-base font-medium">
-              <h3 className="text-lg font-bold">Nick Richardson</h3>
-              <p>Senior UI Designer</p>
-              <p>Sarasota, Florida</p>
+            <div className="h=32 flex flex-col content-start justify-center pl-3 text-base font-medium leading-5 text-slate-700">
+              <h3 className="pb-1.5 text-lg font-bold">Nick Richardson</h3>
+              <p className="pb-1 text-slate-600">Senior UI Designer</p>
+              <p className="text-slate-600">Sarasota, Florida</p>
             </div>
           </div>
           <div className="item flex h-16 justify-center p-2">
-            <div className="flex w-48 items-center justify-between">
-              <a href="https://nicjrich.dev/" target={'_blank'}>
+            <div className="flex h-8 w-48 items-center justify-between text-slate-700">
+              <a
+                href="https://nicjrich.dev/"
+                target={'_blank'}
+                className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-emerald-500"
+              >
                 <Globe className="h-5 w-5" />
               </a>
-              <a href="https://github.com/nicjrichDEV" target={'_blank'}>
+              <a
+                href="https://github.com/nicjrichDEV"
+                target={'_blank'}
+                className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-slate-900"
+              >
                 <GitHub className="h-5 w-5" />
               </a>
               <a
                 href="https://www.linkedin.com/in/nicjrichdev/"
                 target={'_blank'}
+                className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-blue-700"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="https://www.instagram.com/nicjrichdev/"
                 target={'_blank'}
+                className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-pink-500"
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://twitter.com/nicjrichdev" target={'_blank'}>
+              <a
+                href="https://twitter.com/nicjrichdev"
+                target={'_blank'}
+                className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-blue-500"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
             </div>

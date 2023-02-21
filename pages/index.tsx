@@ -32,35 +32,30 @@ export default function Home() {
             <div className="flex h-8 w-48 items-center justify-between text-slate-700">
               <a
                 href="https://nicjrich.dev/"
-                target={'_blank'}
                 className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-emerald-500"
               >
                 <Globe className="h-5 w-5" />
               </a>
               <a
                 href="https://github.com/nicjrichDEV"
-                target={'_blank'}
                 className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-slate-900"
               >
                 <GitHub className="h-5 w-5" />
               </a>
               <a
                 href="https://www.linkedin.com/in/nicjrichdev/"
-                target={'_blank'}
                 className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-blue-700"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="https://www.instagram.com/nicjrichdev/"
-                target={'_blank'}
                 className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-pink-500"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
                 href="https://twitter.com/nicjrichdev"
-                target={'_blank'}
                 className="flex h-7 w-7 items-center justify-center transition-all ease-out hover:-translate-y-px hover:text-blue-500"
               >
                 <Twitter className="h-5 w-5" />
